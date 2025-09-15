@@ -1,0 +1,14 @@
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+exclude = ["migrations", "__pycache__", "manage.py", "tests.py", "views.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "PL", "UP", "C90", "DJ", "SIM", "RUF", "PTH"]
+ignore = ["C901", "F403", "F405", "PLR0912", "PLR0913", "PLR0915", "PLR2004", "RUF012", "SIM118" , "B026"]
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = 72
